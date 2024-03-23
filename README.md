@@ -6,7 +6,7 @@
 - rctx - Context & Provider
 - rst - useState
 
-## Feature
+## Features
 
 This extension is minimalistic yet thoughtfully detailed, designed to enhance your coding efficiency.
 
