@@ -1,4 +1,4 @@
-# simple-react-snippets
+# easy-simple-react-snippets-lite
 
 ## Usage
 
