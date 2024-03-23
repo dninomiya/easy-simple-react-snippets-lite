@@ -6,6 +6,8 @@
 - rctx - Context & Provider
 - rst - useState
 
+![](./images/demo.gif)
+
 ## Features
 
 This extension is minimalistic yet thoughtfully detailed, designed to enhance your coding efficiency.
