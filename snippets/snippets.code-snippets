@@ -1,0 +1,52 @@
+{
+  "React Component": {
+		"prefix": "rfc",
+		"body": [
+			"export default function ${TM_FILENAME_BASE/([^-]+)(?:-|$)/${1:/capitalize}/g}() {",
+			"  return (",
+			"    <div>$2<\/div>",
+			"  )",
+			"}"
+		],
+		"description": "React Component"
+	},
+	"React Context & Provider": {
+		"prefix": "rctx",
+		"body": [
+			"'use client';",
+			"",
+			"import {",
+			"  ReactNode,",
+			"  createContext,",
+			"  useContext,",
+			"  useState,",
+			"} from 'react';",
+			"",
+			"type ContextType = {};",
+			"",
+			"const Context = createContext<ContextType>({} as ContextType);",
+			"",
+			"export function ${TM_FILENAME_BASE/([^-]+)(?:-|$)/${1:/capitalize}/g}Provider({ children }: { children: ReactNode }) {",
+			"  const [_, __] = useState<any>(1);",
+			"",
+			"  return (",
+			"    <Context.Provider",
+			"      value={{}}",
+			"    >",
+			"      {children}",
+			"    </Context.Provider>",
+			"  );",
+			"}",
+			"",
+			"export const use${TM_FILENAME_BASE/([^-]+)(?:-|$)/${1:/capitalize}/g} = () => useContext(Context);",
+		],
+		"description": "React Context & Provider"
+	},
+	"React State": {
+		"prefix": "rst",
+		"body": [
+			"const [$1, set${1/(.)/${1:/upcase}/}] = useState<$2>($3);",
+		],
+		"description": "React State"
+	},
+}
