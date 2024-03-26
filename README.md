@@ -3,6 +3,7 @@
 ## Usage
 
 - rfc - Function Component
+- rfcc - Function Component with Children
 - rctx - Context & Provider
 - rst - useState
 
