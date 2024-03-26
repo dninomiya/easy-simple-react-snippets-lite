@@ -13,12 +13,8 @@
   "React Component With Children": {
 		"prefix": "rfcc",
 		"body": [
-			"import { ReactNode } from 'react';",
-			"",
-			"export default function ${TM_FILENAME_BASE/([^-]+)(?:-|$)/${1:/capitalize}/g}({ children }: { children: ReactNode }) {",
-			"  return (",
-			"    <div>$2{children}<\/div>",
-			"  )",
+			"export default function ${TM_FILENAME_BASE/([^-]+)(?:-|$)/${1:/capitalize}/g}({ children }: { children: React.ReactNode }) {",
+			"  return <div>$2{children}</div>;",
 			"}"
 		],
 		"description": "React Component"
