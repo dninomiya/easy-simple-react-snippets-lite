@@ -4,7 +4,7 @@
   "description": "Simple React Snippets",
   "icon": "images/icon.png",
   "repository": "https://github.com/dninomiya/easy-simple-react-snippets-lite",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "publisher": "nino",
   "engines": {
     "vscode": "^1.87.0"
